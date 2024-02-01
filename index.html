@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    Cuadro de edición del texto original:
-        <input type="text" id="mensaje"/>
-    Cuadro de edición del valor del desplazamiento:
-        <p><input type="number" id="desplazamiento" size="4"/></p>
-    Botón de cifrar:
-        <p><button type="button" id="cifrar">Cifrar</button>    
-    Botón de descifrar:
-        <button type="button" id="descifrar">Descifrar</button> </p>    
-    
-    Cuadro de edición del texto cifrado:    <p><input type="text" id="mensaje2"/></p>
+    <div class="container">
+        <h1>Cifrado César con rotación personalizada</h1>
+        <label for="mensaje">Mensaje</label>
+        <input name="mensaje" type="text" id="mensaje" maxlength="100"/>
+        <label for="desplazamiento">Desplazamiento</label>
+        <input name="desplazamiento" type="number" id="desplazamiento" size="2" max="99"/>
+        <button type="button" id="cifrar">Cifrar</button>    
+        <button type="button" id="descifrar">Descifrar</button>
+        <label for="mensaje2">Mensaje cifrado</label>    
+        <input name="mensaje2" type="text" id="mensaje2" maxlength="100"/>
+    </div>
+
     <script src="cifrado.js"></script>
-    
 </body>
 </html>

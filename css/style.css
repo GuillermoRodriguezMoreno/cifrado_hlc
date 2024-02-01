@@ -6,8 +6,18 @@ body {
     padding: 10px;
   }
   
+  .container {
+    max-width: 400px; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto;
+  }
+  
   h1 {
     color: #1a73e8;
+    margin-bottom: 10px;
+  }
+  
+  label, input, button {
+    display: block;
     margin-bottom: 10px;
   }
   
@@ -33,12 +43,11 @@ body {
     background-color: #45a049;
   }
   
-  #mensaje2 {
+  #mensaje, #mensaje2 {
     border: 2px solid #1a73e8;
     padding: 8px;
     background-color: #f0f8ff;
     width: 100%;
     box-sizing: border-box;
   }
-  
   
